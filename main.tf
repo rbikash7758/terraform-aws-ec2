@@ -8,10 +8,6 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-1"  # Specifies Northern California region
-}
-
-provider "aws" {
   region = "us-east-1"
 }
 
