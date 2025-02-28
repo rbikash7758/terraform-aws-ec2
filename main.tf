@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.31"  # Latest stable version as of February 2024
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
