@@ -2,9 +2,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.31"  # Latest stable version as of February 2024
+      version = "~> 4.16"  # This is using version 4.16.x
     }
   }
+}
+
+provider "aws" {
+  region = "us-west-1"  # Specifies Northern California region
 }
 
 provider "aws" {
